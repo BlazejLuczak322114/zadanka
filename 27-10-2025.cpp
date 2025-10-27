@@ -145,4 +145,26 @@ int main()
     for (int q = 0; q <= 10; q++) {
         cout << tablica[q][0] << " " << tablica[q][1] << " " << tablica[q][2] << endl;
     }
+
+    string koloplasczyzna[20][20];
+    int Rkw = 81;
+
+    for (int i = 0; i < 20; i++) {
+        for (int j = 0; j < 20; j++) {
+            if ((i - 10) * (i - 10) + (j - 10) * (j - 10) <= Rkw) {
+                koloplasczyzna[i][j] = "*";
+            }
+            else {
+                koloplasczyzna[i][j] = " ";
+            }
+        }
+    }
+    for (int i = 0; i < 20; i++) {
+        for (int j = 0; j < 20; j++) {
+            cout << koloplasczyzna[i][j];
+        }
+        cout << endl;
+    }
+    
+
 }
