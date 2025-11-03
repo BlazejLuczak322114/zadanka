@@ -1,5 +1,5 @@
 // 3_11_2025.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//lab4
 
 #include <iostream>
 #include <string>
