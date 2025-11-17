@@ -1,0 +1,24 @@
+Zestaw a=0 b=0:
+c = 1 (czas propagacji: 10)
+e = 0 (czas propagacji: 20)
+f = 1 (czas propagacji: 10)
+k = 0 (czas propagacji: 50)
+------------------------
+Zestaw a=0 b=1:
+c = 1 (czas propagacji: 10)
+e = 1 (czas propagacji: 20)
+f = 1 (czas propagacji: 10)
+k = 1 (czas propagacji: 50)
+------------------------
+Zestaw a=1 b=0:
+c = 0 (czas propagacji: 10)
+e = 1 (czas propagacji: 20)
+f = 0 (czas propagacji: 10)
+k = 0 (czas propagacji: 50)
+------------------------
+Zestaw a=1 b=1:
+c = 0 (czas propagacji: 10)
+e = 1 (czas propagacji: 20)
+f = 0 (czas propagacji: 10)
+k = 1 (czas propagacji: 50)
+------------------------
