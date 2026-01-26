@@ -55,10 +55,13 @@ int main()
         cin >> wejscie1;
         if (wejscie1 == "rosnaco") {
             std::sort(StanMagazynu.begin(), StanMagazynu.end(), [](const Product& a, const Product& b) { return a.cena < b.cena; });
-            for (int i = 0; i < StanMagazynu.size(); i++) {
-                if (StanMagazynu[i].typ == wejscie) {
-                    StanMagazynu[i].wypisz();
-                }
+        }
+        else if (wejscie1 == "malejaco") {
+            std::sort(StanMagazynu.begin(), StanMagazynu.end(), [](const Product& a, const Product& b) { return a.cena > b.cena; });
+        }
+        for (int i = 0; i < StanMagazynu.size(); i++) {
+            if (StanMagazynu[i].typ == wejscie) {
+                StanMagazynu[i].wypisz();
             }
         }
         if (wejscie1 == "stop") {
