@@ -1,6 +1,6 @@
 # zadanka
 sala 427
-15:20(not confirmed) czwartek(29.01.26)
+16:00 czwartek(29.01.26)
 doxygen jak się wygeneruje to do druku
 
 ```txt
