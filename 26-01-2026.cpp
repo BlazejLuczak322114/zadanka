@@ -6,6 +6,7 @@
 #include <vector>
 #include <fstream>
 #include <memory>
+#include <algorithm>
 
 using namespace std;
 
@@ -45,19 +46,22 @@ int main()
         StanMagazynu.push_back(Product(nazwa, typ, ilosc, cena));
     }
     bool dziala = true;
-    std::string wejscie = "";
+    std::string wejscie, wejscie1;
     while (dziala) {
         cout << "Wybierz produkt do wypisania(karta_graficzna,dysk,monitor,procesor,obudowa,plyta)" << endl;
         cin >> wejscie;
-        for (int i = 0; i < StanMagazynu.size(); i++) {
-            if (StanMagazynu[i].typ == wejscie) {
-                StanMagazynu[i].wypisz();
+        //cout << "napisz 'stop' by stop" << endl;
+        cout << "Posortowac wg ceny?(rosnaco/malejaco)" << endl;
+        cin >> wejscie1;
+        if (wejscie1 == "rosnaco") {
+            std::sort(StanMagazynu.begin(), StanMagazynu.end(), [](const Product& a, const Product& b) { return a.cena < b.cena; });
+            for (int i = 0; i < StanMagazynu.size(); i++) {
+                if (StanMagazynu[i].typ == wejscie) {
+                    StanMagazynu[i].wypisz();
+                }
             }
         }
-        //cout << "Posortowac wg ceny?(rosnaco/malejaco)" << endl;
-        cout << "napisz 'stop' by stop" << endl;
-        cin >> wejscie;
-        if (wejscie == "stop") {
+        if (wejscie1 == "stop") {
             dziala = false;
         }
         
