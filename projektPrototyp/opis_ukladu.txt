@@ -1,9 +1,0 @@
-NAND a a c 10 
-NAND b b d 10 
-NAND c d e 10 
-NAND a a f 10 
-NAND f f g 10 
-NAND b b h 10 
-NAND g h i 10 
-NAND e i j 10 
-NAND j j k 10
