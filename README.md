@@ -19,8 +19,10 @@ jak można poprawić, rozbudować etc.
 dokumentacja w doxygen
 ```
 2 semestr:
+```
 krótki raport 2-3 strony (uml może być 1 stroną)
 wrzucić projekt do 20.06.2026
 krótka prezentacja na teams będzie
 2-3 pytania z spradzianu zastępczego ("zaimplementuj klase która robi coś, wyrażenie lambda które robi abc" etc.)
 anyway main point projekt do 20.06
+```
