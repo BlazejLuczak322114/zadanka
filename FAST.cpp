@@ -4,7 +4,7 @@
 #include <iostream>
 
 template <typename T>
-void wyszukiwanieBinarne(T table[],int rozmiar, T wyszukiwany) {
+bool wyszukiwanieBinarne(T table[],int rozmiar, T wyszukiwany) {
     T temp;
     for (int i = 0; i < rozmiar; ++i) {//tablica wczesniej posortowana malejaco
         for (int j = 0; j < rozmiar; ++j) {
@@ -16,7 +16,23 @@ void wyszukiwanieBinarne(T table[],int rozmiar, T wyszukiwany) {
         }
     }
 
-    T srodek = (table[0] + table[rozmiar - 1]) / 2; //srodek tej posortowanej tablicy
+    T left = table[0];
+    T right = table[rozmiar - 1];
+
+    T srodek = (left+right) / 2; //srodek tej posortowanej tablicy
+
+    if (wyszukiwany == srodek) {
+        return 1;
+    }
+    else if(wyszukiwany<srodek) {
+        right = srodek + 1; //jezeli nieparzysta, jak parzysta to bez +1
+    }
+    else {
+        left = srodek + 1;
+    }
+    //next time algorytmy bez pętli i ifów, algorytmy STL
+
+
 
     //zrobić funkcje do sortownaia
     //zrobić funkcje do wyszukiwania binarnego
