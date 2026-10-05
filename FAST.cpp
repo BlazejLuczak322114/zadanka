@@ -42,6 +42,7 @@ bool wyszukiwanieBinarne(T table[],int rozmiar, T wyszukiwany) {
     //2. numer telefonu z długością i numerem kierunkowym jako parametry szablonu
     //3. zaimplementuj układ cykliczny jako klase szablonową
     //4. fisbass
+    //dla chetnych: bez ifow, bez petl, szukanie tekstu w pliku?
 
     //parametr szablonu
 
