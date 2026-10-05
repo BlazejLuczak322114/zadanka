@@ -25,7 +25,7 @@ bool wyszukiwanieBinarne(T table[],int rozmiar, T wyszukiwany) {
         return 1;
     }
     else if(wyszukiwany<srodek) {
-        right = srodek + 1; //jezeli nieparzysta, jak parzysta to bez +1
+        right = srodek - 1; 
     }
     else {
         left = srodek + 1;
